@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://jmrichardson.github.io/data/">
+        <link rel="canonical" href="https://jmrichardson.github.io/install/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Data - Financial Machine Learning</title>
+        <title>Install - Financial Machine Learning</title>
       
     
     
@@ -60,11 +60,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#importing-price-data" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data
+              Install
             
           </span>
         </div>
@@ -217,11 +212,19 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../install/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Install
       </a>
+      
     </li>
   
 
@@ -493,41 +496,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#importing-price-data" class="md-nav__link">
-    Importing Price Data
-  </a>
-  
-    <nav class="md-nav" aria-label="Importing Price Data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#data-preparation" class="md-nav__link">
-    Data Preparation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#prices" class="md-nav__link">
-    Prices
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -538,46 +506,22 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/jmrichardson/fml/edit/master/docs/data.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/jmrichardson/fml/edit/master/docs/install.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>Data</h1>
+  <h1>Install</h1>
 
-<h3 id="importing-price-data">Importing Price Data</h3>
-<p>AIM supports any frequency data (only a handful have been tested so far).  In addition, different time frames can be used within the same pipeline.  For example, feeding the predictions of a weekly model to a daily model (see <a href="feed.md">feed architecture</a>).</p>
-<h4 id="data-preparation">Data Preparation</h4>
-<p>A folder named <code>prices</code> must exist within the current working directory containing a <code>frequency</code> sub-folder with ticker CSV files in the following sample hiearchy:</p>
-<pre><code class="language-no">prices/
-  --weekly/
-    --SPY.csv
-    --GLD.csv
-  --daily/
-    --SPY.csv
-    --GLD.csv
-  --minute15/
-    --SPY.csv
-    --GLD.csv
+<p>The best choice to install FML is to clone the repo and <code>pip install -e</code> from source.  This enables active development from local source code while still using the package as if it were installed:</p>
+<pre><code>git clone https://github.com/jmrichardson/fml.git
+cd fml
+pip install -e .
 </code></pre>
-<p>Optionally, a <code>markets</code> sub-folder containing groups of tickers:</p>
-<pre><code class="language-no">prices/
-  --markets/
-    --etf_sectors.csv
-</code></pre>
-<h4 id="prices"><a href="https://github.com/jmrichardson/aim/blob/9a91b51331cd628528374fea9b33a36fb764fe9c/aim/prices/prices.py#L14https://github.com/jmrichardson/aim/blob/9a91b51331cd628528374fea9b33a36fb764fe9c/aim/prices/prices.py#L14">Prices</a></h4>
-<p>To load price data for a market of equities inside a pipeline, provide a list of tickers and frequency(s) for which the raw prices exist in the prices sub-folder.</p>
-<p><code>prices=aim.Prices(tickers=tickers, frequency=['daily'], start_date='2017-01-01', end_date='2020-12-31', look_back=200),</code></p>
 <ul>
-<li>tickers: List of tickers eg: ['SPY', 'GLD']</li>
-<li>frequency: Name of prices/{frequency} sub-folder</li>
-<li>start_date:  Start date of prices to import</li>
-<li>end_date:  End data of prices to import</li>
-<li>look_back: Number of periods to include for feature calculation. Specifically, data prior to start date will be imported as well as for each split data partition.</li>
-<li>Returns a list of market prices for each frequency included</li>
+<li>Note: FML is a private repo, therefore you will need to clone using your authentication token</li>
 </ul>
-<p>See <a href="https://github.com/jmrichardson/aim/tree/main/examples">examples</a> for more information</p>
 
               
             </article>
@@ -587,6 +531,41 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../tutorials/basic/" class="md-footer__link md-footer__link--next" aria-label="Next: Basic Use Case" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Basic Use Case
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

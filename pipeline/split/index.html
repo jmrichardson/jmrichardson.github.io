@@ -8,21 +8,21 @@
       
       
       
-        <link rel="canonical" href="https://jmrichardson.github.io/data/">
+        <link rel="canonical" href="https://jmrichardson.github.io/pipeline/split/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Data - Financial Machine Learning</title>
+        <title>Split - Financial Machine Learning</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
       
     
@@ -37,7 +37,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#importing-price-data" class="md-skip">
+        <a href="#splits" class="md-skip">
           Skip to content
         </a>
       
@@ -75,7 +75,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Financial Machine Learning" class="md-header__button md-logo" aria-label="Financial Machine Learning" data-md-component="logo">
+    <a href="../.." title="Financial Machine Learning" class="md-header__button md-logo" aria-label="Financial Machine Learning" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data
+              Split
             
           </span>
         </div>
@@ -173,7 +173,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Financial Machine Learning" class="md-nav__button md-logo" aria-label="Financial Machine Learning" data-md-component="logo">
+    <a href="../.." title="Financial Machine Learning" class="md-nav__button md-logo" aria-label="Financial Machine Learning" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -204,7 +204,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -219,7 +219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/" class="md-nav__link">
+      <a href="../../install/" class="md-nav__link">
         Install
       </a>
     </li>
@@ -260,7 +260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tutorials/basic/" class="md-nav__link">
+      <a href="../../tutorials/basic/" class="md-nav__link">
         Basic Use Case
       </a>
     </li>
@@ -274,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tutorials/enhanced/" class="md-nav__link">
+      <a href="../../tutorials/enhanced/" class="md-nav__link">
         Enhanced Use Case
       </a>
     </li>
@@ -294,12 +294,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -322,7 +324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pipeline/stack/" class="md-nav__link">
+      <a href="../stack/" class="md-nav__link">
         Stack
       </a>
     </li>
@@ -334,11 +336,96 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../pipeline/split/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Split
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Split
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#splits" class="md-nav__link">
+    Splits
+  </a>
+  
+    <nav class="md-nav" aria-label="Splits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rolling-window" class="md-nav__link">
+    Rolling Window
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expanding-window" class="md-nav__link">
+    Expanding Window
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#train-test-split" class="md-nav__link">
+    Train Test Split
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regime-detection" class="md-nav__link">
+    Regime Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-start-and-end-points" class="md-nav__link">
+    Inspecting Start and End Points
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -350,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pipeline/workflows.md" class="md-nav__link">
+      <a href="../workflows.md" class="md-nav__link">
         Workflows
       </a>
     </li>
@@ -424,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../targets/direction.md" class="md-nav__link">
+      <a href="../../targets/direction.md" class="md-nav__link">
         Direction
       </a>
     </li>
@@ -453,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../issues/" class="md-nav__link">
+      <a href="../../issues/" class="md-nav__link">
         Known Issues
       </a>
     </li>
@@ -468,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../todo/" class="md-nav__link">
+      <a href="../../todo/" class="md-nav__link">
         To Do
       </a>
     </li>
@@ -500,23 +587,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#importing-price-data" class="md-nav__link">
-    Importing Price Data
+  <a href="#splits" class="md-nav__link">
+    Splits
   </a>
   
-    <nav class="md-nav" aria-label="Importing Price Data">
+    <nav class="md-nav" aria-label="Splits">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#data-preparation" class="md-nav__link">
-    Data Preparation
+  <a href="#rolling-window" class="md-nav__link">
+    Rolling Window
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#prices" class="md-nav__link">
-    Prices
+  <a href="#expanding-window" class="md-nav__link">
+    Expanding Window
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#train-test-split" class="md-nav__link">
+    Train Test Split
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regime-detection" class="md-nav__link">
+    Regime Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-start-and-end-points" class="md-nav__link">
+    Inspecting Start and End Points
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples:
   </a>
   
 </li>
@@ -538,45 +653,36 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/jmrichardson/fml/edit/master/docs/data.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/jmrichardson/fml/edit/master/docs/pipeline/split.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>Data</h1>
+  <h1>Split</h1>
 
-<h3 id="importing-price-data">Importing Price Data</h3>
-<p>AIM supports any frequency data (only a handful have been tested so far).  In addition, different time frames can be used within the same pipeline.  For example, feeding the predictions of a weekly model to a daily model (see <a href="feed.md">feed architecture</a>).</p>
-<h4 id="data-preparation">Data Preparation</h4>
-<p>A folder named <code>prices</code> must exist within the current working directory containing a <code>frequency</code> sub-folder with ticker CSV files in the following sample hiearchy:</p>
-<pre><code class="language-no">prices/
-  --weekly/
-    --SPY.csv
-    --GLD.csv
-  --daily/
-    --SPY.csv
-    --GLD.csv
-  --minute15/
-    --SPY.csv
-    --GLD.csv
-</code></pre>
-<p>Optionally, a <code>markets</code> sub-folder containing groups of tickers:</p>
-<pre><code class="language-no">prices/
-  --markets/
-    --etf_sectors.csv
-</code></pre>
-<h4 id="prices"><a href="https://github.com/jmrichardson/aim/blob/9a91b51331cd628528374fea9b33a36fb764fe9c/aim/prices/prices.py#L14https://github.com/jmrichardson/aim/blob/9a91b51331cd628528374fea9b33a36fb764fe9c/aim/prices/prices.py#L14">Prices</a></h4>
-<p>To load price data for a market of equities inside a pipeline, provide a list of tickers and frequency(s) for which the raw prices exist in the prices sub-folder.</p>
-<p><code>prices=aim.Prices(tickers=tickers, frequency=['daily'], start_date='2017-01-01', end_date='2020-12-31', look_back=200),</code></p>
-<ul>
-<li>tickers: List of tickers eg: ['SPY', 'GLD']</li>
-<li>frequency: Name of prices/{frequency} sub-folder</li>
-<li>start_date:  Start date of prices to import</li>
-<li>end_date:  End data of prices to import</li>
-<li>look_back: Number of periods to include for feature calculation. Specifically, data prior to start date will be imported as well as for each split data partition.</li>
-<li>Returns a list of market prices for each frequency included</li>
-</ul>
+<h3 id="splits">Splits</h3>
+<p>Split modules provide popular split strategies to partition data for model consumption. </p>
+<h4 id="rolling-window">Rolling Window</h4>
+<p><img alt="" src="art/rolling_window.png" /></p>
+<p>Often referred to as rolling window or walk forward optimization, this split strategy offsets each train/test split by the size of test set.</p>
+<p><code>split=aim.Rolling(train_size=365, test_size=180, gap_size=1, expanding_window=False)</code></p>
+<h4 id="expanding-window">Expanding Window</h4>
+<p>Often referred to as rolling window or walk forward optimization, this split strategy offsets each train/test split by the size of test set while anchoring the train set.</p>
+<p><img alt="" src="art/expanding_window.png" /></p>
+<p><code>split=aim.Rolling(train_size=365, test_size=180, gap_size=1, expanding_window=True)</code></p>
+<h4 id="train-test-split">Train Test Split</h4>
+<p>Simple train test split.</p>
+<p><img alt="" src="art/train_test.png" /></p>
+<p><code>split=aim.TrainTest(test_size=.3)</code></p>
+<h4 id="regime-detection">Regime Detection</h4>
+<p>Regimes with general distribution changes are detected among the market of equities.  </p>
+<p><img alt="" src="art/regimes.png" /></p>
+<p><code>split=aim.Regimes(n_splits=5)</code></p>
+<h4 id="inspecting-start-and-end-points">Inspecting Start and End Points</h4>
+<p>Each pipeline creates a <code>pipeline.splits_df</code> data frame to record the start and end dates for all train and test partitions. For example, the following are the start and end dates for a simple rolling split:</p>
+<p><img alt="" src="art/splits_df.png" /></p>
+<h4 id="examples">Examples:</h4>
 <p>See <a href="https://github.com/jmrichardson/aim/tree/main/examples">examples</a> for more information</p>
 
               
@@ -587,6 +693,41 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../stack/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Stack" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Stack
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../issues/" class="md-footer__link md-footer__link--next" aria-label="Next: Known Issues" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Known Issues
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -607,10 +748,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

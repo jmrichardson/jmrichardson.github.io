@@ -36,6 +36,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://jmrichardson.github.io/modules/targets/tail_sets/</loc>
+         <lastmod>2022-06-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jmrichardson.github.io/modules/targets/trend_scanning/</loc>
+         <lastmod>2022-06-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jmrichardson.github.io/modules/targets/triple_barrier/</loc>
+         <lastmod>2022-06-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://jmrichardson.github.io/pipeline/algos/</loc>
          <lastmod>2022-06-08</lastmod>
          <changefreq>daily</changefreq>

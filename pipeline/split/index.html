@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#splits" class="md-skip">
+        <a href="#rolling-window" class="md-skip">
           Skip to content
         </a>
       
@@ -368,43 +368,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#splits" class="md-nav__link">
-    Splits
-  </a>
-  
-    <nav class="md-nav" aria-label="Splits">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#rolling-window" class="md-nav__link">
     Rolling Window
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#expanding-window" class="md-nav__link">
     Expanding Window
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#train-test-split" class="md-nav__link">
     Train Test Split
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#regime-detection" class="md-nav__link">
     Regime Detection
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1111,43 +1098,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#splits" class="md-nav__link">
-    Splits
-  </a>
-  
-    <nav class="md-nav" aria-label="Splits">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#rolling-window" class="md-nav__link">
     Rolling Window
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#expanding-window" class="md-nav__link">
     Expanding Window
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#train-test-split" class="md-nav__link">
     Train Test Split
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#regime-detection" class="md-nav__link">
     Regime Detection
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1171,8 +1145,7 @@
 
   <h1>Split</h1>
 
-<h3 id="splits">Splits</h3>
-<p>Split modules provide popular split strategies to partition data for model consumption. </p>
+<p>Split modules provide popular split strategies to partition data for modeling.</p>
 <h4 id="rolling-window">Rolling Window</h4>
 <p><img alt="" src="../../images/rolling_window.png" /></p>
 <p>Often referred to as rolling window or walk forward optimization, this split strategy offsets each train/test split by the size of test set.</p>
@@ -1182,15 +1155,15 @@
 <p>Often referred to as rolling window or walk forward optimization, this split strategy offsets each train/test split by the size of test set while anchoring the train set.</p>
 <p><img alt="" src="../../images/expanding_window.png" /></p>
 <p><code>split=Rolling(n_splits=3, gap_size=1, expanding_window=True)</code></p>
-<p><code>split=aim.Rolling(train_size=365, test_size=180, gap_size=1, expanding_window=True)</code></p>
+<p><code>split=Rolling(train_size=365, test_size=180, gap_size=1, expanding_window=True)</code></p>
 <h4 id="train-test-split">Train Test Split</h4>
 <p>Simple train test split.</p>
 <p><img alt="" src="../../images/train_test.png" /></p>
-<p><code>split=aim.TrainTest(test_size=.3)</code></p>
+<p><code>split=TrainTest(test_size=.3)</code></p>
 <h4 id="regime-detection">Regime Detection</h4>
 <p>Regimes with general distribution changes are detected among the market of equities.  </p>
 <p><img alt="" src="../../images/regimes.png" /></p>
-<p><code>split=aim.Regimes(n_splits=5)</code></p>
+<p><code>split=Regimes(n_splits=5)</code></p>
 
               
             </article>

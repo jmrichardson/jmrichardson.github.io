@@ -319,27 +319,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#fit-and-predict" class="md-nav__link">
-    Fit and Predict
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#report" class="md-nav__link">
-    Report
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backtest" class="md-nav__link">
-    Backtest
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -580,27 +559,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#fit-and-predict" class="md-nav__link">
-    Fit and Predict
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#report" class="md-nav__link">
-    Report
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backtest" class="md-nav__link">
-    Backtest
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -628,7 +586,7 @@
 <li>3 walk forward train/test splits</li>
 <li>All model predictions used as features for descendant models</li>
 <li>Last split model used as stacking classifier</li>
-<li>The first four splits will have multiple targets:<ul>
+<li>The first 2 splits will have multiple targets:<ul>
 <li>Trend direction</li>
 <li>5 day direction</li>
 <li>1 day direction</li>
@@ -674,58 +632,41 @@
 <pre><code>if __name__ == &quot;__main__&quot;:
     tickers = [&quot;FB&quot;, &quot;AMZN&quot;, &quot;AAPL&quot;, &quot;NFLX&quot;, &quot;GOOG&quot;]
     pipeline = Standard(
-        stack=&quot;all_mesh&quot;, 
+        stack=&quot;all_mesh&quot;,
         split=Rolling(n_splits=3, gap_size=1, expanding_window=False),
         workflows=[{
             &quot;targets&quot;: [
-                Direction(), 
+                Direction(forward=1),
+                Direction(forward=5),
+                TrendScanning()
             ],
             &quot;features&quot;: [
-                LaggedReturns(), 
+                LaggedReturns(),
+                QLib(),
+                Catch22(),
+                Alphas101(),
             ],
-            &quot;transforms&quot;: [], 
-            &quot;reduce&quot;: [], 
+            &quot;transforms&quot;: [
+                FracDiff(),
+            ],
+            &quot;reduce&quot;: [
+                LeaveOneFeatureOut(quantile=.25),
+                BoostBoruta(),
+            ],
             &quot;models&quot;: [
-                PycaretBlend(), 
+                PycaretBlend(classification_models=[&quot;rf&quot;]),
+                PycaretBlend(classification_models=[&quot;svm&quot;]),
             ],
-            &quot;stack&quot;: {  
-                &quot;target&quot;: Direction(),
-                &quot;model&quot;: PycaretBlend(),
+            &quot;stack&quot;: {
+                &quot;reduce&quot;: BoostBoruta(),
+                &quot;target&quot;: Direction(forward=5),
+                &quot;model&quot;: PycaretBlend(classification_models=[&quot;rf&quot;]),
             }
         }],
-        algos=[], 
+        algos=[],
     )
-</code></pre>
-<p>Notes:</p>
-<ul>
-<li>Tickers: List of equities to obtain daily price data</li>
-<li>Pipeline: Standard pipeline (only one supported currently)</li>
-<li>Stack: Enables model predictions to be used as inputs to descendant models.  </li>
-<li>Split: 3 Walk forward train/test splits</li>
-<li>Workflow Target: Next day label (1 postive, 0 negative)</li>
-<li>Workflow Features: Lagged returns as feature inputs</li>
-<li>Workflow Models: Use pycaret AutoML (defaults to Random Forest)</li>
-<li>Workflow Stack: Last split used a meta stacking classifier</li>
-<li>No algorithmic signals</li>
-</ul>
-<h2 id="fit-and-predict">Fit and Predict</h2>
-<p>FML handles splitting the data, labeling each observation, generating the features for each of the 3 models and the plumbing of stacking the models:</p>
-<pre><code># Fit
-prices = YahooCSV(tickers=tickers, frequency=['daily'], start_date='2014-01-01', end_date='2020-01-01', look_back=200)
-pipeline = pipeline.fit(prices)
 
-# Predict
-prices = YahooCSV(tickers=tickers, frequency=['daily'], start_date='2020-01-02', look_back=200)
-predictions = pipeline.transform(prices)
 </code></pre>
-<h2 id="report">Report</h2>
-<ul>
-<li>Under construction</li>
-</ul>
-<h2 id="backtest">Backtest</h2>
-<ul>
-<li>Under construction</li>
-</ul>
 
               
             </article>

@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://jmrichardson.github.io/todo_old/</loc>
+         <lastmod>2022-06-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://jmrichardson.github.io/modules/targets/direction/</loc>
          <lastmod>2022-06-08</lastmod>
          <changefreq>daily</changefreq>

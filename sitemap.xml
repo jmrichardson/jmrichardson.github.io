@@ -26,22 +26,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jmrichardson.github.io/modules/components/</loc>
-         <lastmod>2022-06-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://jmrichardson.github.io/modules/targets/direction/</loc>
          <lastmod>2022-06-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jmrichardson.github.io/modules/targets/targets/</loc>
+         <loc>https://jmrichardson.github.io/modules/targets/return/</loc>
          <lastmod>2022-06-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jmrichardson.github.io/pipeline/pipeline/</loc>
+         <loc>https://jmrichardson.github.io/pipeline/algos/</loc>
          <lastmod>2022-06-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -52,6 +47,11 @@
     </url>
     <url>
          <loc>https://jmrichardson.github.io/pipeline/stack/</loc>
+         <lastmod>2022-06-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jmrichardson.github.io/pipeline/workflows/</loc>
          <lastmod>2022-06-08</lastmod>
          <changefreq>daily</changefreq>
     </url>

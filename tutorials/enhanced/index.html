@@ -396,8 +396,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pipeline/workflows.md" class="md-nav__link">
+      <a href="../../pipeline/workflows/" class="md-nav__link">
         Workflows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipeline/algos/" class="md-nav__link">
+        Algos
       </a>
     </li>
   
@@ -470,8 +484,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../targets/direction.md" class="md-nav__link">
+      <a href="../../modules/targets/direction/" class="md-nav__link">
         Direction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/targets/return/" class="md-nav__link">
+        Return
       </a>
     </li>
   
@@ -582,16 +610,16 @@
 <h2 id="use-case">Use Case</h2>
 <ul>
 <li>FAANG equities (Facebook, Amazon, Apple, Netflix and Google)</li>
-<li>Predict trend direction</li>
+<li>Forecast 5 day direction</li>
+<li>All model predictions used as features for future models</li>
 <li>3 walk forward train/test splits</li>
-<li>All model predictions used as features for descendant models</li>
-<li>Last split model used as stacking classifier</li>
 <li>The first 2 splits will have multiple targets:<ul>
 <li>Trend direction</li>
 <li>5 day direction</li>
 <li>1 day direction</li>
 </ul>
 </li>
+<li>Last split model used as stacking classifier</li>
 <li>Features generated for each split:<ul>
 <li>Lagged Returns</li>
 <li>QLib</li>
@@ -610,25 +638,25 @@
 </li>
 <li>Each split modeled with the following:<ul>
 <li>Random Forest</li>
-<li>Blended SVM and Logistic Regression</li>
+<li>Support Vector Machine</li>
 </ul>
 </li>
 </ul>
 <p>There is quite a bit of work that needs to be stitched together in this workflow.  The amount of tasks/models required is the product of:</p>
 <ul>
-<li>Workflows:  1 workflow (Another tutorial will show multiple workflows)</li>
-<li>Frequency of data:  Daily (Another tutorial will show multiple frequencies)</li>
+<li>Workflows:  1 workflow</li>
+<li>Frequency of data:  Daily</li>
 <li>Number of dimension reductions: 2 (BoostBoruta and LOFO)</li>
 <li>Number of models: 2 (RF and SVM)</li>
 <li>Targets: 3 (Trend, 1 and 5 day direction)</li>
 <li>Number of splits:  3 splits (last split used for stacking)</li>
 </ul>
 <p>Number of models/tasks required: 1 x 1 x 2 x 2 x 3 x 2 + 1 = 25</p>
-<p>Internally, FML maintains the state of each task and handles the stacking of predictions as inputs into descendant models:</p>
+<p>Internally, FML maintains the state of each task and handles the stacking of predictions as inputs into future models:</p>
 <p><img alt="Task Table" src="../../images/work.png" /></p>
-<p>Note the last split model receives all previous model predictions/scores as inputs along with transformed features reduced by BoostBoruta.  </p>
+<p>Note the last split model receives all previous model predictions and scores as inputs along with transformed features reduced by BoostBoruta.  </p>
 <h2 id="pipeline">Pipeline</h2>
-<p>Using base boilerplate code with the appropriate modules:</p>
+<p>Using boilerplate code with the appropriate modules:</p>
 <pre><code>if __name__ == &quot;__main__&quot;:
     tickers = [&quot;FB&quot;, &quot;AMZN&quot;, &quot;AAPL&quot;, &quot;NFLX&quot;, &quot;GOOG&quot;]
     pipeline = Standard(

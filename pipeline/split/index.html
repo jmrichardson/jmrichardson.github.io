@@ -403,20 +403,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#inspecting-start-and-end-points" class="md-nav__link">
-    Inspecting Start and End Points
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples:
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -437,8 +423,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../workflows.md" class="md-nav__link">
+      <a href="../workflows/" class="md-nav__link">
         Workflows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../algos/" class="md-nav__link">
+        Algos
       </a>
     </li>
   
@@ -511,8 +511,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../targets/direction.md" class="md-nav__link">
+      <a href="../../modules/targets/direction/" class="md-nav__link">
         Direction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/targets/return/" class="md-nav__link">
+        Return
       </a>
     </li>
   
@@ -622,20 +636,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#inspecting-start-and-end-points" class="md-nav__link">
-    Inspecting Start and End Points
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples:
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -664,26 +664,23 @@
 <h3 id="splits">Splits</h3>
 <p>Split modules provide popular split strategies to partition data for model consumption. </p>
 <h4 id="rolling-window">Rolling Window</h4>
-<p><img alt="" src="art/rolling_window.png" /></p>
+<p><img alt="" src="../../images/rolling_window.png" /></p>
 <p>Often referred to as rolling window or walk forward optimization, this split strategy offsets each train/test split by the size of test set.</p>
+<p><code>split=Rolling(n_splits=3, gap_size=1, expanding_window=False)</code></p>
 <p><code>split=aim.Rolling(train_size=365, test_size=180, gap_size=1, expanding_window=False)</code></p>
 <h4 id="expanding-window">Expanding Window</h4>
 <p>Often referred to as rolling window or walk forward optimization, this split strategy offsets each train/test split by the size of test set while anchoring the train set.</p>
-<p><img alt="" src="art/expanding_window.png" /></p>
+<p><img alt="" src="../../images/expanding_window.png" /></p>
+<p><code>split=Rolling(n_splits=3, gap_size=1, expanding_window=True)</code></p>
 <p><code>split=aim.Rolling(train_size=365, test_size=180, gap_size=1, expanding_window=True)</code></p>
 <h4 id="train-test-split">Train Test Split</h4>
 <p>Simple train test split.</p>
-<p><img alt="" src="art/train_test.png" /></p>
+<p><img alt="" src="../../images/train_test.png" /></p>
 <p><code>split=aim.TrainTest(test_size=.3)</code></p>
 <h4 id="regime-detection">Regime Detection</h4>
 <p>Regimes with general distribution changes are detected among the market of equities.  </p>
-<p><img alt="" src="art/regimes.png" /></p>
+<p><img alt="" src="../../images/regimes.png" /></p>
 <p><code>split=aim.Regimes(n_splits=5)</code></p>
-<h4 id="inspecting-start-and-end-points">Inspecting Start and End Points</h4>
-<p>Each pipeline creates a <code>pipeline.splits_df</code> data frame to record the start and end dates for all train and test partitions. For example, the following are the start and end dates for a simple rolling split:</p>
-<p><img alt="" src="art/splits_df.png" /></p>
-<h4 id="examples">Examples:</h4>
-<p>See <a href="https://github.com/jmrichardson/aim/tree/main/examples">examples</a> for more information</p>
 
               
             </article>
@@ -713,13 +710,13 @@
       
       
         
-        <a href="../../issues/" class="md-footer__link md-footer__link--next" aria-label="Next: Known Issues" rel="next">
+        <a href="../workflows/" class="md-footer__link md-footer__link--next" aria-label="Next: Workflows" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Known Issues
+              Workflows
             </div>
           </div>
           <div class="md-footer__button md-icon">

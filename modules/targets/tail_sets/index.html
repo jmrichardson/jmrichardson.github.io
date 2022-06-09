@@ -60,6 +60,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#parameters" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -566,9 +571,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Tail Sets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Tail Sets
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1038,6 +1079,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1060,11 +1123,11 @@
 <p>A tail set is defined to be a group of stocks whose volatility-adjusted return is in the highest or lowest 
 quantile, for example the highest or lowest 5%. </p>
 <p>A classification model is then fit using these labels to determine which stocks to buy and sell in a long / short portfolio.</p>
-<p><strong>Parameters:</strong></p>
+<h4 id="parameters">Parameters</h4>
 <ul>
 <li>Todo</li>
 </ul>
-<p><strong>Example:</strong></p>
+<h4 id="example">Example</h4>
 <pre><code>&quot;targets&quot;: [
     TailSets(),
 ],

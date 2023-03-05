@@ -10,8 +10,12 @@
       
         <link rel="canonical" href="https://jmrichardson.github.io/">
       
+      
+      
+        <link rel="next" href="install/">
+      
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
     
     
       
@@ -19,13 +23,13 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.402914a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
+
     
     
     
@@ -38,10 +42,11 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -52,7 +57,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
     
@@ -62,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#financial-machine-learning-framework" class="md-skip">
           Skip to content
         </a>
       
@@ -74,7 +79,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Financial Machine Learning" class="md-header__button md-logo" aria-label="Financial Machine Learning" data-md-component="logo">
       
@@ -118,7 +125,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -130,7 +137,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -142,7 +149,7 @@
         <a href="https://github.com/jmrichardson/fml" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -187,7 +194,7 @@
       <a href="https://github.com/jmrichardson/fml" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -208,7 +215,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
@@ -235,8 +242,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#financial-machine-learning-framework" class="md-nav__link">
+    Financial Machine Learning Framework
   </a>
   
 </li>
@@ -249,8 +256,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-goals" class="md-nav__link">
-    Project Goals
+  <a href="#documentation" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-fml" class="md-nav__link">
+    Why FML?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todo" class="md-nav__link">
+    Todo
   </a>
   
 </li>
@@ -285,37 +306,23 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="setup/" class="md-nav__link">
-        Setup
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_4">
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
           Tutorials
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Tutorials
         </label>
@@ -327,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/basic/" class="md-nav__link">
+      <a href="tutorials/basic.md" class="md-nav__link">
         Basic Use Case
       </a>
     </li>
@@ -341,7 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/enhanced/" class="md-nav__link">
+      <a href="tutorials/enhanced.md" class="md-nav__link">
         Enhanced Use Case
       </a>
     </li>
@@ -366,18 +373,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_5">
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
           Pipeline
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Pipeline" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Pipeline
         </label>
@@ -389,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pipeline/stack/" class="md-nav__link">
+      <a href="pipeline/stack.md" class="md-nav__link">
         Stack
       </a>
     </li>
@@ -403,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pipeline/split/" class="md-nav__link">
+      <a href="pipeline/split.md" class="md-nav__link">
         Split
       </a>
     </li>
@@ -417,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pipeline/workflows/" class="md-nav__link">
+      <a href="pipeline/workflows.md" class="md-nav__link">
         Workflows
       </a>
     </li>
@@ -431,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pipeline/algos/" class="md-nav__link">
+      <a href="pipeline/algos.md" class="md-nav__link">
         Algos
       </a>
     </li>
@@ -456,18 +464,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
           Modules
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Modules" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Modules
         </label>
@@ -482,18 +491,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1" type="checkbox" id="__nav_6_1" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6_1">
+        <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
           Algos
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Algos" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_1">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_1">
           <span class="md-nav__icon md-icon"></span>
           Algos
         </label>
@@ -508,18 +518,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1_1" type="checkbox" id="__nav_6_1_1" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_1" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6_1_1">
+        <label class="md-nav__link" for="__nav_5_1_1" id="__nav_5_1_1_label" tabindex="0">
           Book of Trading Strategies
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Book of Trading Strategies" data-md-level="3">
-        <label class="md-nav__title" for="__nav_6_1_1">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_1_1">
           <span class="md-nav__icon md-icon"></span>
           Book of Trading Strategies
         </label>
@@ -531,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         Contrarian Augmented Bollinger Bands
       </a>
     </li>
@@ -545,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         Pattern Differentials
       </a>
     </li>
@@ -576,18 +587,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6_2">
+        <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
           Targets
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Targets" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_2">
           <span class="md-nav__icon md-icon"></span>
           Targets
         </label>
@@ -599,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/targets/direction/" class="md-nav__link">
+      <a href="modules/targets/direction.md" class="md-nav__link">
         Direction
       </a>
     </li>
@@ -613,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/targets/return/" class="md-nav__link">
+      <a href="modules/targets/return.md" class="md-nav__link">
         Return
       </a>
     </li>
@@ -627,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/targets/tail_sets/" class="md-nav__link">
+      <a href="modules/targets/tail_sets.md" class="md-nav__link">
         Tail Sets
       </a>
     </li>
@@ -641,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/targets/trend_scanning/" class="md-nav__link">
+      <a href="modules/targets/trend_scanning.md" class="md-nav__link">
         Trend Scanning
       </a>
     </li>
@@ -655,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/targets/triple_barrier/" class="md-nav__link">
+      <a href="modules/targets/triple_barrier.md" class="md-nav__link">
         Triple Barrier
       </a>
     </li>
@@ -679,18 +691,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6_3">
+        <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
           Features
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Features" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_3">
           <span class="md-nav__icon md-icon"></span>
           Features
         </label>
@@ -705,18 +718,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3_1" type="checkbox" id="__nav_6_3_1" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_1" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6_3_1">
+        <label class="md-nav__link" for="__nav_5_3_1" id="__nav_5_3_1_label" tabindex="0">
           Engineer
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Engineer" data-md-level="3">
-        <label class="md-nav__title" for="__nav_6_3_1">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_3_1">
           <span class="md-nav__icon md-icon"></span>
           Engineer
         </label>
@@ -728,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         Alphas101
       </a>
     </li>
@@ -742,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         Cacth22
       </a>
     </li>
@@ -756,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         Qlib
       </a>
     </li>
@@ -780,18 +794,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3_2" type="checkbox" id="__nav_6_3_2" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_2" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6_3_2">
+        <label class="md-nav__link" for="__nav_5_3_2" id="__nav_5_3_2_label" tabindex="0">
           Indicators
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Indicators" data-md-level="3">
-        <label class="md-nav__title" for="__nav_6_3_2">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_3_2">
           <span class="md-nav__icon md-icon"></span>
           Indicators
         </label>
@@ -803,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         TuneTA
       </a>
     </li>
@@ -827,18 +842,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3_3" type="checkbox" id="__nav_6_3_3" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_3" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6_3_3">
+        <label class="md-nav__link" for="__nav_5_3_3" id="__nav_5_3_3_label" tabindex="0">
           Returns
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Returns" data-md-level="3">
-        <label class="md-nav__title" for="__nav_6_3_3">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_3_3">
           <span class="md-nav__icon md-icon"></span>
           Returns
         </label>
@@ -850,7 +866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         Lagged Returns
       </a>
     </li>
@@ -874,18 +890,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3_4" type="checkbox" id="__nav_6_3_4" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_4" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6_3_4">
+        <label class="md-nav__link" for="__nav_5_3_4" id="__nav_5_3_4_label" tabindex="0">
           Time
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Time" data-md-level="3">
-        <label class="md-nav__title" for="__nav_6_3_4">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_3_4">
           <span class="md-nav__icon md-icon"></span>
           Time
         </label>
@@ -897,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         Date Time
       </a>
     </li>
@@ -928,18 +945,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6_4">
+        <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
           Transforms
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Transforms" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_4">
           <span class="md-nav__icon md-icon"></span>
           Transforms
         </label>
@@ -951,7 +969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         Fractional Difference
       </a>
     </li>
@@ -975,18 +993,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6_5">
+        <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
           Reduce
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Reduce" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_5">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_5">
           <span class="md-nav__icon md-icon"></span>
           Reduce
         </label>
@@ -998,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         Boost Boruta
       </a>
     </li>
@@ -1012,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         Leave One Feature Out
       </a>
     </li>
@@ -1036,18 +1055,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6_6">
+        <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
           Models
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Models" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_6">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_6">
           <span class="md-nav__icon md-icon"></span>
           Models
         </label>
@@ -1059,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="todo/" class="md-nav__link">
+      <a href="todo.md" class="md-nav__link">
         Pycaret Blend
       </a>
     </li>
@@ -1105,8 +1125,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#financial-machine-learning-framework" class="md-nav__link">
+    Financial Machine Learning Framework
   </a>
   
 </li>
@@ -1119,8 +1139,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-goals" class="md-nav__link">
-    Project Goals
+  <a href="#documentation" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-fml" class="md-nav__link">
+    Why FML?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todo" class="md-nav__link">
+    Todo
   </a>
   
 </li>
@@ -1133,79 +1167,63 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-  <a href="https://github.com/jmrichardson/fml/edit/master/docs/README.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+                  
 
+  
+  
 
 
   <h1>Home</h1>
 
-<p align="center">
-  <a href="https://github.com/jmrichardson/fml">
-    <img src="images/logo.png" alt="FML">
-  </a>
-</p>
-
-<p><a href="https://github.com/jmrichardson/fml">Financial Machine Learning</a> framework is a modular library for automating financial machine learning workflows, integration of algorithmic strategies, and a platform for sharing reusable code.  Designed with re-usable components, FML abstracts away the complexity of creating algorithmic and machine learning workflows with minimal lines of python code.  Modular and reusable components such as feature engineering, transformations, dimension reduction, models, algorigmithic strategies, etc can easily be leveraged.  FML also enables powerful stacking ensemble techniques across multiple data splits.</p>
-<h3 id="overview">Overview</h3>
-<p>Quantitative traders often reuse code in numerous strategies and also frequently build similar workflows.  FML seeks to leverage existing and reusable code in a modular and structured fashion. The code can easily be leveraged using a standard sklearn interface and continually improved.  In addition, quant workflows generally consist of repeating processes in strategy development.  FML implements flexible pipelines to rapidly build flexible and complex workflows.</p>
-<p>FML can be used to leverage pre-built modules in your own workflow. This enables the reuse of code in the popular sklearn fit/transform interface.  In addition, pipelines can be configured to rapidly create customized workflows.  Pipelines are easily configured by:</p>
-<ol>
-<li>Determine the data splits to model.  Split methodologies such as rolling window (both anchored and expanding), regime detection or simple train/test split are used to define what data partitions are fed into each model.  Test data (out of sample) is also defined to measure the model(s) efficacy.</li>
-<li>Choose stack architecture. The predictions of earlier models can easily be used as inputs into later models.  This stacking technique enables an ensemble approach to model predictions.  FML handles the plumbing necessary for many models across multiple data splits.</li>
-<li>Define one or many workflow(s). Simply select from the available modules for targets, features, transforms, feature reduction and models.  </li>
-</ol>
-<h3 id="features">Features</h3>
+<p>Use Hypernets as example github</p>
+<h2 id="financial-machine-learning-framework">Financial Machine Learning Framework</h2>
+<p>FML is a modular framework for automating financial machine learning pipelines using modular and reusable code.  FML is currently being integrated with the <a href="https://numer.ai/">NumerAI</a> platform.  </p>
+<h2 id="features">Features</h2>
 <ul>
-<li>Rapidly prototype and develop models in a flexible and custom workflow</li>
-<li>Easily use existing library of modules for feature generation, transformation, dimension reduction, observations labels and model development</li>
-<li>FML includes smart caching to help avoid repetitive, time-consuming tasks</li>
-<li>Process workflow reports to show all tasks and performance</li>
-<li>Full pipeline construction for stack/ensemble across multiple data splits</li>
-<li>Fit pipeline easily deployed in external trading bot for signal generation</li>
+<li>Simple abstraction for creating complex machine learning pipelines</li>
+<li>Reuse existing code with scikit interface</li>
+<li>Rapidly test flexible pipelines with minimal code</li>
+<li>Modules include data preprocessing, partitioning, models, targets, feature engineering,  transforms, and selection</li>
+<li>Feature neutralization using test or training data</li>
+<li>Model ensembles with equal or modern portfolio optimization weighting</li>
+<li>Performance report for validation</li>
+<li>Easy parameter optimization using Optuna</li>
 </ul>
-<h3 id="project-goals">Project Goals</h3>
+<h2 id="documentation">Documentation</h2>
 <ul>
-<li>Provide a flexible, automated and easy-to-use implementation of machine learning workflows for systematic trading.  The main tenants of a workflow consists of features, transformations, reduction, models and targets applied against a data split definition for multiple data frequencies. Models can be stacked across data splits in many ways, and multiple workflows can be utilized to define simple to complex configurations.  </li>
-<li>Provide a comprehensive library of algorithmic and machine learning modules. All modules are sci-kit compatible with familiar fit/transform methods enabling consistent and uniform interfaces.</li>
-<li>Combine machine learning with quantitative trading strategies in an easy to use framework.</li>
+<li><a href="file:///D:\Projects\fml\docs\Install.md">Installation</a></li>
+<li><a href="quick_start/">Quick Start</a></li>
+<li><a href="pipelines/">Understanding Pipelines</a></li>
+<li><a href="modules/">Creating Modules</a></li>
+</ul>
+<h2 id="why-fml">Why FML?</h2>
+<p>It would be nice to create a model and then just simply include it in a pipeline.  It would be great to reuse the feature selection code I wrote for another project.  It would also be nice to have flexibility in creating new pipelines without rewriting the pipeline code. </p>
+<p>The traditional way is to maintain a larger pipeline script and inject the relevant code.  This can become difficult to manage as complexity increases.  A framework that simply calls the fit and predict of modular code while hiding the pipeline complexity provides a much more efficient test and deploy methodology.  The additional benefit is over time, you build a collection of organized and reusable code for pipeline modules such as models, targets, features, selection, etc.    FML makes it easy to create complex pipelines with low effort while making idea development significantly easier.    </p>
+<h2 id="todo">Todo</h2>
+<ul>
+<li>Model stacking (model predictions used as features for downstream models)</li>
+<li>Numerai signal integration</li>
+<li>More modules</li>
 </ul>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-      
-        
-        <a href="install/" class="md-footer__link md-footer__link--next" aria-label="Next: Install" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Install
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1226,10 +1244,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="assets/javascripts/bundle.b78d2936.min.js"></script>
       
     
   </body>

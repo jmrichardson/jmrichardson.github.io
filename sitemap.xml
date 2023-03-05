@@ -2,92 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jmrichardson.github.io/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/data/</loc>
-         <lastmod>2022-06-13</lastmod>
+         <lastmod>2023-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jmrichardson.github.io/install/</loc>
-         <lastmod>2022-06-13</lastmod>
+         <lastmod>2023-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jmrichardson.github.io/issues/</loc>
-         <lastmod>2022-06-13</lastmod>
+         <loc>https://jmrichardson.github.io/modules/</loc>
+         <lastmod>2023-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jmrichardson.github.io/setup/</loc>
-         <lastmod>2022-06-13</lastmod>
+         <loc>https://jmrichardson.github.io/pipelines/</loc>
+         <lastmod>2023-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jmrichardson.github.io/todo/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/todo_old/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/modules/targets/direction/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/modules/targets/return/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/modules/targets/tail_sets/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/modules/targets/trend_scanning/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/modules/targets/triple_barrier/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/pipeline/algos/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/pipeline/split/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/pipeline/stack/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/pipeline/workflows/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/tutorials/basic/</loc>
-         <lastmod>2022-06-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jmrichardson.github.io/tutorials/enhanced/</loc>
-         <lastmod>2022-06-13</lastmod>
+         <loc>https://jmrichardson.github.io/quick_start/</loc>
+         <lastmod>2023-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
